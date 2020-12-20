@@ -1,0 +1,92 @@
+
+
+.wrapper{
+    display: block;
+  
+    width: 45%;
+    border-radius: 20px;
+    height: 90px;
+    margin-left: 50%;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    transform: translate(-50%, -50%) ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+}
+.wrapper span{
+    font-family: bignoodlettitling;
+    color: rgb(5, 1, 1);
+    border: 5px solid rgb(12, 2, 2);
+    
+    border-radius: 25px;
+    
+}
+.box{
+    display: inline-block;
+    overflow: hidden;
+    height: 1.3em;
+    line-height: 1em;
+    font-weight: bold;
+    margin:0px 0px;
+    font-size: 4.5em;
+ 
+}
+.bxx{
+    display: inline-block;
+    overflow: hidden;
+    height: 1.3em;
+    line-height: 1em;
+    font-weight: bold;
+    font-size: 4.5em;
+    margin:0px 0px;
+}
+.bx{
+
+    display: inline-block;
+    overflow: hidden;
+    height: 1.3em;
+    line-height: 1em;
+    font-weight: bold;
+    font-size: 4.5em;
+    margin:0px 0px;
+}
+.bxx :after{
+    position: relative;
+    white-space: pre;
+   content: "3\A 2\A 1\A";
+
+}
+
+.box:after {
+    position: relative;
+    white-space: pre;
+   content: "0\A 1\A 2\A 3\A 4\A 5\A 6\A 7\A 8\A 9\A"; 
+
+}
+
+.bxx.third-number:after {
+    animation: animate 15s steps(10)  infinite;
+}
+
+.box.first-number:after {
+    animation: animate 10s steps(10)  ;
+}
+.box.second-number:after {
+    animation: animate 8s steps(10)  infinite;
+}
+
+.box.zero-number :after {
+    animation: animate  5s steps(4)  ;
+    
+}  
+ 
+   @keyframes animate{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: -10em;
+    }
+    
+    }  

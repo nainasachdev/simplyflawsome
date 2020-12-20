@@ -1,0 +1,10 @@
+li{
+    display: inline;
+    float: center;
+}
+
+a{
+    display: block;
+    padding: 10px;
+    background-color: aquamarine;
+}
